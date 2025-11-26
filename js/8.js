@@ -48,13 +48,13 @@ gravy8Func = function gravy8Func() {
         var timeUntilEnd = endTime - tLA;
         // Before sale starts
         if (timeUntilStart > 0) {
-            var message = event.name + '<small> PT</small><br>' + 'DOORBUSTERS start in...';
+            var message = event.name + '<small> PST</small><br>' + 'DOORBUSTERS start in...';
             displayTheCountDown8(timeUntilStart, message, event.style);
             return;
         }
         // During sale
         else if (timeUntilStart <= 0 && timeUntilEnd > 0) {
-            var message = event.name + '<small> PT</small><br>' + '<a href="' + event.url + '">DOORBUSTERS</a> end in...';
+            var message = event.name + '<small> PST</small><br>' + '<a href="' + event.url + '">DOORBUSTERS</a> end in...';
             displayTheCountDown8(timeUntilEnd, message, event.style);
             return;
         }
@@ -65,7 +65,7 @@ gravy8Func = function gravy8Func() {
             var timeUntilNextStart = nextStartTime - tLA;
 
             if (timeUntilNextStart > 0) {
-                var message = nextEvent.name + '<small> PT</small><br>' + 'DOORBUSTERS start in...';
+                var message = nextEvent.name + '<small> PST</small><br>' + 'DOORBUSTERS start in...';
                 displayTheCountDown8(timeUntilNextStart, message, nextEvent.style);
                 return;
             }
